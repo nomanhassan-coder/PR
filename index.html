@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Home Page</title>
+    <style>
+        /*
+        * 1. RESET/BASIC STYLES
+        */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4; /* Light gray background */
+            color: #333; /* Dark gray text */
+        }
+
+        /*
+        * 2. HEADER STYLES
+        */
+        header {
+            background-color: #333; /* Dark background for header */
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0.5em 0 0 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ff9900; /* Accent color on hover */
+        }
+
+        /*
+        * 3. MAIN CONTENT STYLES
+        */
+        main {
+            padding: 20px;
+            max-width: 960px; /* Center content and limit width */
+            margin: 20px auto;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+
+        section:last-child {
+            border-bottom: none;
+        }
+
+        h2 {
+            color: #007bff; /* Blue accent color */
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 5px;
+            margin-top: 0;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 15px;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+
+        /*
+        * 4. FOOTER STYLES
+        */
+        footer {
+            text-align: center;
+            padding: 1em 0;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>My Awesome Home Page</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="welcome">
+            <h2>👋 Welcome to Our Site</h2>
+            <p>This is a simple, clean, and responsive single-file home page created with just HTML and CSS.</p>
+            <p>It includes a header, navigation, main content sections, and a footer.</p>
+            <a href="#" class="button">Get Started</a>
+        </section>
+
+        <section id="features">
+            <h2>✨ Key Features</h2>
+            <ul>
+                <li>Clean and modern layout.</li>
+                <li>Uses internal CSS for a single-file structure.</li>
+                <li>Basic responsive design (meta viewport).</li>
+                <li>Easy to understand and modify.</li>
+            </ul>
+        </section>
+
+        <section id="contact-info">
+            <h2>📞 Contact Us</h2>
+            <p>Feel free to reach out to us!</p>
+            <p>Email: example@email.com</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Simple Home Page | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
